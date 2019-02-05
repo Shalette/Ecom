@@ -73,15 +73,6 @@ CREATE TABLE IF NOT EXISTS `users` (
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `name`, `email`, `password`, `contact`, `city`, `address`) VALUES
-(10, 'Pastel', 'komalpolaris@gmail.com', 'd45c781e3d0b3382ee2b8356c804c354', '8123456224', 'Mumbai', 'Mumbai');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `user_items`
 --
 
@@ -93,17 +84,6 @@ CREATE TABLE IF NOT EXISTS `user_items` (
   `status` enum('Added to cart','Confirmed') NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `user_items`
---
-
-INSERT INTO `user_items` (`id`, `user_id`, `item_id`, `status`) VALUES
-(8, 10, 3, 'Confirmed'),
-(7, 10, 9, 'Confirmed'),
-(9, 10, 1, 'Confirmed'),
-(10, 10, 10, 'Confirmed');
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
